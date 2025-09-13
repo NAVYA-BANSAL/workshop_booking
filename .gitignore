@@ -24,6 +24,7 @@ local_settings.py
 target/
 
 #Database
+*.sqlite3
 db.sqlite3
 
 #MAC OS specific
@@ -45,3 +46,15 @@ db.sqlite3
 #images/gif
 *.png
 *.gif
+
+# Virtual environment
+venv/
+ENV/
+.env
+
+# IDE / OS files
+.idea/
+.vscode/
+*.pot
+
+

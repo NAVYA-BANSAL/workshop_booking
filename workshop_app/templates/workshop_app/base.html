@@ -155,7 +155,9 @@
     {% endblock %}
 
     <div style="background-color: yellow; text-align: center; padding: 10px">
-      Updated Base Template - Feature Branch
+      {% block content %}
+      <h1>Updated Base Template - Feature Branch</h1>
+      {% endblock %}
     </div>
 
     <nav style="background-color: #333; padding: 10px">
@@ -164,12 +166,6 @@
     </nav>
 
     {% block content %}{% endblock %}
-
-    <div class="base-content">
-      {% block content %}
-      <h1>Base Template Content. Please override me</h1>
-      {% endblock %}
-    </div>
 
     <script>
       {% if messages %}

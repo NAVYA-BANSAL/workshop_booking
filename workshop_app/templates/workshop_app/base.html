@@ -165,7 +165,13 @@
       <a href="/profile/" style="color: white">Profile</a>
     </nav>
 
-    {% block content %}{% endblock %}
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li style="color: green">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %} {% block content %}{% endblock %}
 
     <script>
       {% if messages %}

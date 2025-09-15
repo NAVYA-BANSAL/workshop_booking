@@ -3,9 +3,6 @@
   {% load static %} {% load custom_filters %}
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- TEST BASE -->
-    <h1 style="color: red">This is the NEW BASE</h1>
-
     <title>{% block title %} HomePage {% endblock %}</title>
 
     <script src="{% static 'workshop_app/js/jquery-3.4.1.min.js' %}"></script>
@@ -156,6 +153,12 @@
       </div>
     </nav>
     {% endblock %}
+
+    <div style="background-color: yellow; text-align: center; padding: 10px">
+      Updated Base Template - Feature Branch
+    </div>
+
+    {% block content %}{% endblock %}
 
     <div class="base-content">
       {% block content %}

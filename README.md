@@ -31,8 +31,6 @@ This branch (`feature/initial-setup`) focuses on improving the UI/UX of the FOSS
 The original site was minimal and functional, but lacked responsiveness and clear visual hierarchy.  
 My goal was to enhance usability, especially for students accessing on mobile devices.
 
----
-
 ## Enhancements Made
 
 1. **Added Bootstrap (via CDN)** for responsive layouts and consistent styling.
@@ -41,8 +39,6 @@ My goal was to enhance usability, especially for students accessing on mobile de
 4. **Banner for Identification** – Clear visual indicator to differentiate feature branch updates.
 5. **Message Notifications** – Integrated Toastr for better feedback on user actions.
 
----
-
 ## Design Principles Used
 
 - **Mobile-first design** – ensured navigation and text remain readable on small screens.
@@ -50,39 +46,21 @@ My goal was to enhance usability, especially for students accessing on mobile de
 - **Accessibility** – improved color contrast, larger clickable areas.
 - **Visual Hierarchy** – navbar at top, footer at bottom, content in clear sections.
 
----
-
 ## Responsiveness
 
 - Bootstrap grid system automatically adapts layout.
 - Navbar collapses into a toggle menu on smaller devices.
 - Flexible container widths for different screen sizes.
 
----
-
 ## Trade-offs
 
 - Used Bootstrap (external dependency) → slight increase in load time, but gained responsive, modern UI without reinventing CSS.
 - Kept changes **incremental**, avoiding heavy redesigns, so performance stayed lightweight.
-
----
 
 ## Challenges
 
 - Ensuring templates extended the updated `base.html` (took debugging to confirm changes).
 - Balancing **new UI** while keeping the **existing Django structure intact**.
 - Managed Git commits carefully to keep history clean for recruiters to review.
-
----
-
-## Visual Showcase
-
-### Before:
-
-_(Insert screenshot of original site)_
-
-### After:
-
-_(Insert screenshot of updated navbar/footer + banner with Bootstrap)_
 
 **NOTE**: Check docs/Getting_Started.md for more info.
